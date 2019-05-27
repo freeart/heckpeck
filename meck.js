@@ -16,12 +16,16 @@
         document.forms[0].submit()
         break;
       case "/icpplustieb/acEntrada":
+        if (window.__step__ == 2){
+            envia()
+        }
         document.querySelector("#txtIdCitado").value = window.__data__.document
         document.querySelector("#txtDesCitado").value = window.__data__.name
         document.querySelector("#txtPaisNac").value = window.__data__.country
         document.querySelector("#txtFecha").value = window.__data__.expire
         window.scrollBy(0, 500);
         document.querySelector("#html_element").style.backgroundColor = "red";
+        window.__step__ = 2;
         break;
       case "/icpplustieb/acValidarEntrada":
         enviar('solicitud')
