@@ -2,7 +2,7 @@
     const page = document.location.pathname
     switch(page){  
       case "/icpplus/":
-      case "/icpplustieb/index.html"
+      case "/icpplustieb/index.html":
         document.querySelector("#divProvincias select#form").value = "/icpplustie/citar"
         mostrarOcultarMensaje();
         document.querySelectorAll("#idMensajeBarcelona a")[2].click() 
