@@ -20,6 +20,8 @@
         document.querySelector("#txtDesCitado").value = window.__data__.name
         document.querySelector("#txtPaisNac").value = window.__data__.country
         document.querySelector("#txtFecha").value = window.__data__.expire
+        window.scrollBy(0, 500);
+        document.querySelector("#html_element").style.backgroundColor = "red";
         break;
       case "/icpplustieb/acValidarEntrada":
         enviar('solicitud')
